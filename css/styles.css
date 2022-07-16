@@ -143,8 +143,10 @@ img {
  
 .header-link:hover,
 .header-link:focus, 
-.header-contacts:hover, 
-.header-contacts:focus,
+.header-email:hover,
+.header-email:focus,
+.header-phone:hover,
+.header-phone:focus
 .address-link:hover,
 .address-link:focus {
 color: var(--accent-cl);
@@ -156,7 +158,7 @@ color: var(--accent-cl);
 
 }
 
-.phone {
+.header-phone {
     color: var(--secondary-txt-cl);
 }
 
@@ -185,6 +187,20 @@ color: var(--accent-cl);
     text-align: center;
 
  }
+
+ .overlay {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../images/hero-bg.jpg);
+    background-color: #C4C4C4;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+ }
+
+
 
 
 .hero-title {
@@ -461,7 +477,22 @@ color: var(--accent-cl);
 
 .header-icon {
     margin-right: 10px;
+    color: #757575;
 }
+
+.header-icon:hover,
+.header-icon:focus {
+
+   color: #2196F3
+}
+
+
+
+.header-icon {
+    fill: currentColor;
+}
+
+
 
 /* Features icons */
 
