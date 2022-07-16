@@ -264,7 +264,7 @@ color: var(--accent-cl);
 
 /* work section */
 
-.work-title, .team-title {
+.work-title, .team-title, .clients-title {
     margin-bottom: 50px;
     text-align: center;
     font-weight: 700;
@@ -273,6 +273,7 @@ color: var(--accent-cl);
     letter-spacing: 0.03em;
     
 }
+
 
 /* Team-section */
 
@@ -319,6 +320,16 @@ color: var(--accent-cl);
     padding-bottom: 60px;
 }
 
+.footer-container {
+    display: flex;
+    align-items: baseline;
+    
+}
+
+.footer-contacts {
+    margin-right: 70px;
+}
+
 .logo-footer {
     margin-right: 0;
 }
@@ -357,6 +368,17 @@ color: var(--accent-cl);
     color: rgba(255, 255, 255, 0.6);
 }
 
+.footer-title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+}
+
 /* Portfolio page */
 
 .filters-list {
@@ -387,6 +409,7 @@ color: var(--accent-cl);
 .portfolio-btn-current {
     color: var(--white-cl);
     background-color: var(--accent-btn-cl);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 
 }
 
@@ -395,6 +418,15 @@ color: var(--accent-cl);
     flex-wrap: wrap;
     gap: 30px;
 
+}
+
+.projects-link{
+    display: block;
+}
+
+.projects-link:hover,
+.projects-link:focus {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 
 }
 
@@ -425,6 +457,11 @@ color: var(--accent-cl);
     color: var(--secondary-txt-cl);
 }
     
+/* header icons */
+
+.header-icon {
+    margin-right: 10px;
+}
 
 /* Features icons */
 
@@ -472,9 +509,58 @@ color: var(--accent-cl);
 }
 
 
+/* Clients-icons */
+
+.clients-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    color: #AFB1B8;
+    
+}
 
 
+.clients-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
 
-    
-    
-    
+}
+
+.clients-link:hover,
+.clients-link:focus {
+    color: #2196F3;
+    border-color: #2196F3;
+ 
+}
+
+
+.clients-icon {
+    fill: currentColor;
+}
+       
+
+/* footer-socials-icons */
+
+.footer-socials {
+    display: flex;
+    flex-direction: column;
+       
+}
+
+.footer-socials-link {
+    color:#ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+
+
+}
+.footer-socials-link:hover,
+.footer-socials-link:focus {
+
+    background-color: #2196F3;
+}
