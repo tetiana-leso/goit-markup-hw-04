@@ -133,13 +133,19 @@ img {
     color: var(--primary-txt-cl) ;
 }
 
-
-
 .header-contacts {
     margin-left: auto;
     color: var(--secondary-txt-cl);
 }
 
+.header-email, .header-phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+   
+}
  
 .header-link:hover,
 .header-link:focus, 
@@ -154,13 +160,27 @@ color: var(--accent-cl);
 }
 
 .header-link-current {
-    color: var(--accent-cl)
-
+    color: var(--accent-cl);
 }
 
-.header-phone {
-    color: var(--secondary-txt-cl);
+/* header icons */
+
+.header-icon {
+    margin-right: 10px;
+    color: #757575;
 }
+
+.header-icon:hover,
+.header-icon:focus {
+
+    fill: #2196F3;
+}
+
+.header-icon {
+    fill: currentColor;
+}
+
+
 
 .logo {
     margin-right: 93px;
@@ -193,7 +213,10 @@ color: var(--accent-cl);
     height: 600px;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(../images/hero-bg.jpg);
+    background-image: linear-gradient(to right,
+     rgba(47, 48, 58, 0.4), 
+     rgba(47, 48, 58, 0.4)), 
+     url(../images/hero-bg.jpg);
     background-color: #C4C4C4;
     background-repeat: no-repeat;
     background-position: center;
@@ -473,24 +496,6 @@ color: var(--accent-cl);
     color: var(--secondary-txt-cl);
 }
     
-/* header icons */
-
-.header-icon {
-    margin-right: 10px;
-    color: #757575;
-}
-
-.header-icon:hover,
-.header-icon:focus {
-
-   color: #2196F3
-}
-
-
-
-.header-icon {
-    fill: currentColor;
-}
 
 
 
